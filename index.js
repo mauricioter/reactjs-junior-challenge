@@ -1,14 +1,14 @@
 function buttonSalvar() {
-    var conteudoSalvo = ""
+
     function salvarConteudo() {
         // Obter o valor do input
         var conteudo = document.getElementById("input").value;
         // Verificar se o conteúdo não está vazio
         if (conteudo.trim() !== "") {
-            conteudoSalvo = conteudo;
-            alert("Conteúdo salvo");
-        } else {
-            alert("O campo está vazio. Por favor, digite algo antes de salvar.");
+            let tabela = document.getElementById("tabela")
+            let novaLinha = tabela.insertRow(-1);
+            let celula = novaLinha.insertCell(0);
+            celula.inerHTML = conteudo
         }
     }
     // Associar a função ao clique do botão
@@ -16,3 +16,12 @@ function buttonSalvar() {
 }
 buttonSalvar()
 
+// function addValor() {
+//     const conteudo = document.getElementById("input")
+//     console.log(conteudo)
+//     // if (conteudo.trim() !== "") {
+//     //     const tabela = document.querySelectorAll("#tabela")
+//     //     const novaLinha = tabela.insertRow(-1);
+//     //     let celula = novaLinha.
+//     // }
+// }
