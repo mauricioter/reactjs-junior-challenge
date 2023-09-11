@@ -71,6 +71,7 @@ body {
     border: 0;
     background-color: #BE152A;
     color: #fff;
+    margin: 5px;
 }
 
 .button1 {
@@ -79,6 +80,7 @@ body {
     border: 0;
     background-color: #9E9E9E;
     color: #fff;
+    margin: 5px;
 }
 
 .logo {
@@ -99,7 +101,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .input-search {
@@ -124,30 +126,27 @@ body {
     display: flex;
 }
 
-.table {
-    display: grid;
-    font-family: Impact, Haettenschweiler, inherit;
-    border-collapse: collapse;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+thead tr {
+    background-color: #5B595C;
 }
 
-.tr-linhasV {
-    background-color: #ffffff;
-}
-
-.linhas {
+td {
     /* padding-right: 50px; */
     border: 1px solid;
     text-align: left;
     padding: 10px;
 }
 
-.linhas-Email {
-    padding-right: 100px;
-    border: 1px solid;
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
 }
+
+tbody tr {
+    background-color: #ffffff;
+}
+
 
 .input-botao {
     display: flex;
@@ -163,6 +162,11 @@ body {
 
 .section-down {
     background-color: #5B595C;
+}
+
+.button-donw {
+    display: flex;
+    justify-content: center;
 }
 
 /* }
