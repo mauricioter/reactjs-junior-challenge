@@ -49,10 +49,18 @@ function salvarConteudo() {
 
     console.log(data);
     form.reset();
+    clearTable()
     loadTable()
 }
 
-//
+// 
+
+function clearTable() {
+    const linhas = document.querySelectorAll(".tr-linhasV");
+    linhas.forEach(linha => linha.remove())
+}
+
+
 function loadTable() {
     if (data.length > 0) {
         noData.style.setProperty('display', 'none')
@@ -87,7 +95,7 @@ function search() {
     const datas = data
     resultadoElemt.innerHTML = ""
 
-    const resultadoFiltrado = data.filter(item => {
+    const resultadoFiltrado = datas.filter(item => {
         const valorPesquisa = item.name.toLocaleLowerCase()
         return valorPesquisa.includes(termoPesquisa)
     });
